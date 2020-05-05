@@ -20,6 +20,18 @@ function handleMotion(event) {
     
 }
 
+if ( WEBGL.isWebGLAvailable() ) {
+
+	// Initiate function or other initializations here
+	main();
+
+} else {
+
+	var warning = WEBGL.getWebGLErrorMessage();
+	document.getElementById( 'container' ).appendChild( warning );
+
+}
+
 
 function main() {
     const my_canvas = document.getElementById('canvas');
@@ -51,4 +63,3 @@ function main() {
 
     render();
 }
-main();

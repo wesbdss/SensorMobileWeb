@@ -1,7 +1,10 @@
 
 window.addEventListener("devicemotion", handleMotion, true);
 var a = document.getElementById('ace-x');
-
+$('#ace-x').html(null);
+$('#ace-y').html(null);
+$('#ace-z').html(null);
+$('#inter').html(null);
 function handleMotion (event) {
   var acceleration = event.acceleration;
   var interval = event.interval;

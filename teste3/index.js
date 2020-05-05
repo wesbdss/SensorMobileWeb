@@ -20,15 +20,6 @@ function handleMotion(event) {
     
 }
 
-if ( WEBGL.isWebGLAvailable() ) {
-
-	// Initiate function or other initializations here
-	main();
-
-} else {
-    alert("WebGl não funfa aqui");
-
-}
 
 
 function main() {
@@ -61,3 +52,5 @@ function main() {
 
     render();
 }
+
+main();

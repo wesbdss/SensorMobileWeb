@@ -26,9 +26,7 @@ if ( WEBGL.isWebGLAvailable() ) {
 	main();
 
 } else {
-
-	var warning = WEBGL.getWebGLErrorMessage();
-	document.getElementById( 'container' ).appendChild( warning );
+    alert("WebGl não funfa aqui");
 
 }
 
